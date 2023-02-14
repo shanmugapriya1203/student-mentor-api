@@ -7,7 +7,7 @@ import * as dotenv from 'dotenv';
 dotenv.config()
 
 const app=express()
-const port=process.env.port;//auto assign port
+const port=process.env.port || 8000; //auto assign port
 
 const url=process.env.url;
 const client=new MongoClient(url);
