@@ -17,7 +17,7 @@ const client=new MongoClient(url);
 
  app.use(express.json());
  app.get("/", function (request, response) {
-    response.send("hi");
+    response.send("Welcome to Student-Mentor-API😊");
   });
 app.use("/api/mentor",mentorRouter)
 app.use("/api/student",studentRouter)
